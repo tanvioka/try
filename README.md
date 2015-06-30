@@ -119,18 +119,18 @@ SetEnv  dandb_env  qa
 
 SetEnv  api_env  dev  
 SetEnv  SLIM_MODE development  
-SetEnv  linked_server_name      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LNK_SRV_PHX.dbcc_ecomm  
-SetEnv  owl_db_host             &nbsp;&nbsp;&nbsp;10.24.34.100:63695  
-SetEnv  owl_dbsvc_host          &nbsp;&nbsp;&nbsp;10.24.34.100:63695  
-SetEnv  owl_beo_master_host     &nbsp;&nbsp;&nbsp;10.24.34.100:63662  
-SetEnv  owl_db_name             &nbsp;&nbsp;&nbsp;dbcc_ecomm  
-SetEnv  owl_db_user             &nbsp;&nbsp;&nbsp;CREDIBILITY \\<username>  
-SetEnv  owl_db_pass             <password>  
-SetEnv  es_admin_user           <br>es_admin  
-SetEnv  es_admin_password       <br>Dandb123  
-SetEnv  alibaba_des_key         64531111  
-SetEnv  alibaba_key             645311  
-SetEnv  alibaba_secret          SPiX5emH98q  
+SetEnv  linked_server_name      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LNK_SRV_PHX.dbcc_ecomm  
+SetEnv  owl_db_host             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.24.34.100:63695  
+SetEnv  owl_dbsvc_host          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.24.34.100:63695  
+SetEnv  owl_beo_master_host     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.24.34.100:63662  
+SetEnv  owl_db_name             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dbcc_ecomm  
+SetEnv  owl_db_user             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CREDIBILITY \\<username>  
+SetEnv  owl_db_pass             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</password/>  
+SetEnv  es_admin_user           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es_admin  
+SetEnv  es_admin_password       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dandb123  
+SetEnv  alibaba_des_key         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;64531111  
+SetEnv  alibaba_key             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;645311  
+SetEnv  alibaba_secret          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPiX5emH98q  
 
  ## IP Restriction configs  
 SetEnv  ip_list_malibu       38.122.108.88/30  
