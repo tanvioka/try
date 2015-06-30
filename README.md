@@ -119,7 +119,7 @@ SetEnv  dandb_env  qa
 
 SetEnv  api_env  dev  
 SetEnv  SLIM_MODE development  
-SetEnv  linked_server_name      LNK_SRV_PHX.dbcc_ecomm  bNZBNBZXBjkKJjkjshajkjkha
+SetEnv  linked_server_name      LNK_SRV_PHX.dbcc_ecomm  bNZ hgh                                BNBZXBjkKJjkjshajkjkha
 SetEnv  owl_db_host             10.24.34.100:63695  
 SetEnv  owl_dbsvc_host          10.24.34.100:63695  
 SetEnv  owl_beo_master_host     10.24.34.100:63662  
