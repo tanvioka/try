@@ -21,19 +21,22 @@ Submit your public key to the help desk to be added to Active Directory.
 Make a HelpDesk ticket at: https://dandbhelpdesk.zendesk.com/
 
 ### Fork Repos and Join DandB Org
-Generate OAuth token from GitHub:  
-https://help.github.com/articles/creating-an-access-token-for-command-line-use/  
-Set Up Jenkins jobs: To be done by IMG
-Visit https://ci.malibucoding.com/job/add_new_dev/  
-Enter GitHub username, Teams, and Role  
-For fOWL the teams will be 'PULL-ONLY, FOWL'  
-Click Build  
-Visit https://ci.malibucoding.com/job/Accept_Org_Fork_New_Dev_Repos
-Enter your GitHub username, OAuth Token (New Devs), and list of Repos you would like to fork.
-For fOWL the repos you will need will be 'fowl, phoenix, salt-config, jenkins-jobs'
-Click Build
-For information on how to setup and sync forked repos see https://help.github.com/articles/configuring-a-remote-for-a-fork & https://help.github.com/articles/syncing-a-fork
-Configure OWL Local Application Configuration File
+* Generate OAuth token from GitHub:  
+  * https://help.github.com/articles/creating-an-access-token-for-command-line-use/  
+*Set Up Jenkins jobs: To be done by IMG
+  * Visit https://ci.malibucoding.com/job/add_new_dev/  
+  * Enter GitHub username, Teams, and Role  
+  * For fOWL the teams will be 'PULL-ONLY, FOWL'  
+  * Click Build  
+* Visit https://ci.malibucoding.com/job/Accept_Org_Fork_New_Dev_Repos
+  * Enter your GitHub username, OAuth Token (New Devs), and list of Repos you would like to fork.
+  * For fOWL the repos you will need will be 'fowl, phoenix, salt-config, jenkins-jobs'
+  * Click Build  
+
+For information on how to setup and sync forked repos see :  
+ * https://help.github.com/articles/configuring-a-remote-for-a-fork  
+ * https://help.github.com/articles/syncing-a-fork
+Configure OWL Local Application Configuration File  
 Update /etc/apache2/extra/dev_db.include with <username> and <password> and ensure entries match existing file.
 OWL Setup Guide - dev_db.include
  
