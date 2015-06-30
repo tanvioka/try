@@ -23,7 +23,7 @@ Make a HelpDesk ticket at: https://dandbhelpdesk.zendesk.com/
 ### Fork Repos and Join DandB Org
 * Generate OAuth token from GitHub:  
   * https://help.github.com/articles/creating-an-access-token-for-command-line-use/  
-*Set Up Jenkins jobs: To be done by IMG
+* Set Up Jenkins jobs: To be done by IMG
   * Visit https://ci.malibucoding.com/job/add_new_dev/  
   * Enter GitHub username, Teams, and Role  
   * For fOWL the teams will be 'PULL-ONLY, FOWL'  
