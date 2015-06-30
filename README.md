@@ -16,8 +16,7 @@ You might also be interested in...
 ------------------------------------------------------------------------
 
 ### Generate SSH Keys
-https://help.github.com/articles/generating-ssh-keys/
-Add SSH Key to GitHub
+Add SSH Key to GitHub. Go to https://help.github.com/articles/generating-ssh-keys/  
 Submit your public key to the help desk to be added to Active Directory. Make a HelpDesk ticket at: https://dandbhelpdesk.zendesk.com/
 Fork Repos and Join DandB Org
 Generate OAuth token from GitHub:
