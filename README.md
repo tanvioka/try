@@ -97,34 +97,41 @@ visiting fowl.local/status should yield
 * Postman has been bookmarked in Chrome and is also available at chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm/index.html  
 * Now you can have a small, manageable, set of collections that work in each environment!
 Note: the access tokens are attached and will expire, you can easily update them in Postman.
-Database Access Setup (with SQuirreL SQL)
-For most purposes, the database can be accessed in SQuirreL SQL without the need for a more complicated virtual machine setup.
-Launch SQuirreL SQL.
-In the Aliases pane, edit the 4 aliases and add your Active Directory credentials:
 
-For Example:
-Field	Value
-Name	DEV dbcc_ecomm
-Driver	jTDS SQL Server
-URL	
-jdbc:jtds:sqlserver://10.26.34.100:63695;DOMAIN=CREDIBILITY;
-User Name	
-your AD credentials
-Password
-Preparing to Use Bottle
-For more information regarding Ship In A Bottle (SIAB) please see the following documentation:
-Ship in a Bottle - Deployment Guide
-cd ~/projects/salt-config
-vagrant status
-vagrant up saltmaster
+#### 8. Database Access Setup (with SQuirreL SQL)  
+
+ * For most purposes, the database can be accessed in SQuirreL SQL without the need for a more complicated virtual machine setup.  
+ * Launch SQuirreL SQL.  
+ * In the Aliases pane, edit the 4 aliases and add your Active Directory credentials:  
  
 
-You might also be interested in...
-OWL Logging on Mac OSX
-PHPStorm / PHP Storm Keys
-tunnelblick (for vpn)
-Alias Shortcuts - Improve Efficiency
-iTerm2
+For Example:
+
+
+| Field         | Value                                                             | 
+| ------------- |:-----------------------------------------------------------------:| 
+| Name          | DEV dbcc_ecomm                                                    | 
+| Driver        | jTDS SQL Server                                                   |  
+| URL           | jdbc:jtds:sqlserver://10.26.34.100:63695;DOMAIN=CREDIBILITY;      |  
+| Username      |  your AD credentials                                              |  
+| Password      | your AD credentials                                               |  
+
+
+##### Preparing to Use Bottle  
+For more information regarding Ship In A Bottle (SIAB) please see the following documentation:  
+Ship in a Bottle - Deployment Guide
+
+`cd ~/projects/salt-config  
+vagrant status  
+vagrant up saltmaster`
+ 
+
+#### 9. You might also be interested in...  
+OWL Logging on Mac OSX  
+PHPStorm / PHP Storm Keys  
+tunnelblick (for vpn)  
+Alias Shortcuts - Improve Efficiency  
+iTerm2  
 Zshell
 
 
