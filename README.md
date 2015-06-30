@@ -17,15 +17,17 @@ You might also be interested in...
 
 ### Generate SSH Keys
 Add SSH Key to GitHub. Go to https://help.github.com/articles/generating-ssh-keys/  
-Submit your public key to the help desk to be added to Active Directory. Make a HelpDesk ticket at: https://dandbhelpdesk.zendesk.com/
-Fork Repos and Join DandB Org
-Generate OAuth token from GitHub:
-https://help.github.com/articles/creating-an-access-token-for-command-line-use/
+Submit your public key to the help desk to be added to Active Directory.   
+Make a HelpDesk ticket at: https://dandbhelpdesk.zendesk.com/
+
+### Fork Repos and Join DandB Org
+Generate OAuth token from GitHub:  
+https://help.github.com/articles/creating-an-access-token-for-command-line-use/  
 Set Up Jenkins jobs: To be done by IMG
-Visit https://ci.malibucoding.com/job/add_new_dev/
-Enter GitHub username, Teams, and Role
-For fOWL the teams will be 'PULL-ONLY, FOWL'
-Click Build
+Visit https://ci.malibucoding.com/job/add_new_dev/  
+Enter GitHub username, Teams, and Role  
+For fOWL the teams will be 'PULL-ONLY, FOWL'  
+Click Build  
 Visit https://ci.malibucoding.com/job/Accept_Org_Fork_New_Dev_Repos
 Enter your GitHub username, OAuth Token (New Devs), and list of Repos you would like to fork.
 For fOWL the repos you will need will be 'fowl, phoenix, salt-config, jenkins-jobs'
