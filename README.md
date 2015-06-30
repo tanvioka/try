@@ -119,11 +119,11 @@ SetEnv  dandb_env  qa
 
 SetEnv  api_env  dev  
 SetEnv  SLIM_MODE development  
-SetEnv  linked_server_name      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LNK_SRV_PHX.dbcc_ecomm  
-SetEnv  owl_db_host             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.24.34.100:63695  
-SetEnv  owl_dbsvc_host          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.24.34.100:63695  
-SetEnv  owl_beo_master_host     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.24.34.100:63662  
-SetEnv  owl_db_name             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dbcc_ecomm  
+SetEnv  linked_server_name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LNK_SRV_PHX.dbcc_ecomm  
+SetEnv  owl_db_host&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.24.34.100:63695  
+SetEnv  owl_dbsvc_host&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    10.24.34.100:63695  
+SetEnv  owl_beo_master_host&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     10.24.34.100:63662  
+SetEnv  owl_db_name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dbcc_ecomm  
 SetEnv  owl_db_user             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CREDIBILITY \\<username>  
 SetEnv  owl_db_pass             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</password/>  
 SetEnv  es_admin_user           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es_admin  
