@@ -119,18 +119,18 @@ SetEnv  dandb_env  qa
 
 SetEnv  api_env  dev  
 SetEnv  SLIM_MODE development  
-SetEnv  linked_server_name  LNK_SRV_PHX.dbcc_ecomm  
-SetEnv  owl_db_host         10.24.34.100:63695  
-SetEnv  owl_dbsvc_host      10.24.34.100:63695  
-SetEnv  owl_beo_master_host 10.24.34.100:63662  
-SetEnv  owl_db_name         dbcc_ecomm  
-SetEnv  owl_db_user         CREDIBILITY\\<username>  
-SetEnv  owl_db_pass         <password>  
-SetEnv  es_admin_user        es_admin  
-SetEnv  es_admin_password    Dandb123  
-SetEnv  alibaba_des_key      64531111  
-SetEnv  alibaba_key          645311  
-SetEnv  alibaba_secret       SPiX5emH98q  
+SetEnv  linked_server_name      LNK_SRV_PHX.dbcc_ecomm  
+SetEnv  owl_db_host             10.24.34.100:63695  
+SetEnv  owl_dbsvc_host          10.24.34.100:63695  
+SetEnv  owl_beo_master_host     10.24.34.100:63662  
+SetEnv  owl_db_name             dbcc_ecomm  
+SetEnv  owl_db_user             CREDIBILITY \\<username>  
+SetEnv  owl_db_pass             <password>  
+SetEnv  es_admin_user           es_admin  
+SetEnv  es_admin_password       Dandb123  
+SetEnv  alibaba_des_key         64531111  
+SetEnv  alibaba_key             645311  
+SetEnv  alibaba_secret          SPiX5emH98q  
 
  ## IP Restriction configs  
 SetEnv  ip_list_malibu       38.122.108.88/30  
