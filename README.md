@@ -77,19 +77,25 @@ A good reference for packages we can add and install are listed below:
  * https://packagist.org/
 
 
+#### 6. Restart Apache and Test
 
+`#####sudo apachectl restart`
 
-
-Restart Apache and Test
-sudo apachectl restart
 visiting fowl.local/status should yield
 
-Setup PHPStorm
-OWL Setup Guide - PHPStorm
-Using Postman
-Postman is a Chrome extension that helps you be more efficient while working with APIs
-Postman has been bookmarked in Chrome and is also available at chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm/index.html
-Now you can have a small, manageable, set of collections that work in each environment!
+#### 7. Setup PHPStorm
+
+##### OWL Setup Guide - PHPStorm
+
+* Running PHPUnit through PHPStorm requires PHPStorm 8
+* In PHPStorm preferences assign PHP54 as your interpreter and provide the path to vendor in your include path:
+* and setup PHPUnit config files. NOTE: You must change PHPUnit library to use the custom loader specified below:
+
+
+#### Using Postman
+* Postman is a Chrome extension that helps you be more efficient while working with APIs  
+* Postman has been bookmarked in Chrome and is also available at chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm/index.html  
+* Now you can have a small, manageable, set of collections that work in each environment!
 Note: the access tokens are attached and will expire, you can easily update them in Postman.
 Database Access Setup (with SQuirreL SQL)
 For most purposes, the database can be accessed in SQuirreL SQL without the need for a more complicated virtual machine setup.
