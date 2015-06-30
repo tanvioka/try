@@ -35,10 +35,11 @@ Make a HelpDesk ticket at: https://dandbhelpdesk.zendesk.com/
 
 For information on how to setup and sync forked repos see :  
  * https://help.github.com/articles/configuring-a-remote-for-a-fork  
- * https://help.github.com/articles/syncing-a-fork
-Configure OWL Local Application Configuration File  
-Update /etc/apache2/extra/dev_db.include with <username> and <password> and ensure entries match existing file.
-OWL Setup Guide - dev_db.include
+ * https://help.github.com/articles/syncing-a-fork  
+ 
+### Configure OWL Local Application Configuration File  
+Update /etc/apache2/extra/dev_db.include with <username> and <password> and ensure entries match existing file.  
+[OWL Setup Guide - dev_db.include](https://dunandb.jira.com/wiki/display/OWL/OWL+Setup+Guide+-+dev_db.include)  
  
 Fork and Run Boxen
 Forking this repo will be handled above when accepted into DandB GitHub
