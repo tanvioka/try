@@ -126,8 +126,8 @@ SetEnv  owl_beo_master_host     &nbsp;&nbsp;&nbsp;10.24.34.100:63662
 SetEnv  owl_db_name             &nbsp;&nbsp;&nbsp;dbcc_ecomm  
 SetEnv  owl_db_user             &nbsp;&nbsp;&nbsp;CREDIBILITY \\<username>  
 SetEnv  owl_db_pass             <password>  
-SetEnv  es_admin_user           es_admin  
-SetEnv  es_admin_password       Dandb123  
+SetEnv  es_admin_user           <br>es_admin  
+SetEnv  es_admin_password       <br>Dandb123  
 SetEnv  alibaba_des_key         64531111  
 SetEnv  alibaba_key             645311  
 SetEnv  alibaba_secret          SPiX5emH98q  
