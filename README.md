@@ -16,13 +16,13 @@ You might also be interested in...
 ------------------------------------------------------------------------
 #### <a name="genarate_SSH"></a>
 
-#### Generate SSH Keys
+#### 1. Generate SSH Keys
 Add SSH Key to GitHub. Go to https://help.github.com/articles/generating-ssh-keys/  
 Submit your public key to the help desk to be added to Active Directory.   
 Make a HelpDesk ticket at: https://dandbhelpdesk.zendesk.com/
 #### <a name="fork_repo"></a>
 
-#### Fork Repos and Join DandB Org
+#### 2. Fork Repos and Join DandB Org
 * Generate OAuth token from GitHub:  
   * https://help.github.com/articles/creating-an-access-token-for-command-line-use/  
 * Set Up Jenkins jobs: To be done by IMG
@@ -40,17 +40,19 @@ For information on how to setup and sync forked repos see :
  * https://help.github.com/articles/syncing-a-fork  
 
 #### <a name="config_OWL"></a>  
-#### Configure OWL Local Application Configuration File  
+#### 3. Configure OWL Local Application Configuration File  
 Update /etc/apache2/extra/dev_db.include with <username> and <password> and ensure entries match existing file.  
 [OWL Setup Guide - dev_db.include](#setup_OWL)  
  
-Fork and Run Boxen
-Forking this repo will be handled above when accepted into DandB GitHub
-Fork the following repo: https://github.com/taoistmath/USSBoxen
-Open Terminal and run the following commands:
-<team> can be any of the following: fowl, phoenix, helios, automation
+#### 4. Fork and Run Boxen  
+
+Forking this repo will be handled above when accepted into DandB GitHub  
+Fork the following repo: https://github.com/taoistmath/USSBoxen  
+Open Terminal and run the following commands:  
+<team> can be any of the following: fowl, phoenix, helios, automation  
 (fowl includes phoenix, helios includes verified and mycredit, and automation includes helios and fowl)
-sudo mkdir -p /opt/boxen       //Do not copy this line! You have to type it!
+
+> sudo mkdir -p /opt/boxen       //Do not copy this line! You have to type it!
 sudo chown ${USER}:staff /opt/boxen
 git clone git@github.com:<github_username>/USSBoxen.git /opt/boxen/repo
 cd /opt/boxen/repo
@@ -60,8 +62,24 @@ source /opt/boxen/env.sh       //This step will load Boxen's environment
 boxen --srcdir ~               //This step set your source directory to your home directory
 source /opt/boxen/env.sh       //This step will reload Boxen's environment
 ./script/boxen --no-fde <team> //This step will set up apache files and clone your repos
-Run Composer
-Follow the directions here Using Composer with OWL.
+
+#### 5. Run Composer
+
+###### Directions for Running Composer
+ * Navigate to the root of the fOWL repo.  
+ * If this is the first time you've pulled fOWL, run composer install.  
+ * From time to time, you'll need to run composer update as libraries get updated.  
+*Note: it may show warnings when running the install. This is most likely due to updates being available for the libraries, but have not been pulled yet.*
+
+###### What is Composer? 
+Composer is a PHP package manager. It allows your app to only contain the code that you're building within version control, and let outside libraries be added in when necessary. In addition, it provides autoloading of those libraries, making the process of adding things painless, simple, and easy.   
+A good reference for packages we can add and install are listed below: 
+ * https://packagist.org/
+
+
+
+
+
 Restart Apache and Test
 sudo apachectl restart
 visiting fowl.local/status should yield
@@ -172,7 +190,7 @@ SetEnv urbanairship_secret 1
 
 `TODO: Pulled from the BOXEN Setup Guide. Need to combined this with the above.`   
 
-#=== Environment for OWL DEVELOPMENT website  
+#### === Environment for OWL DEVELOPMENT website  
 
 SetEnv  dandb_env  qa  
 SetEnv  dandb_env  dev  
