@@ -15,12 +15,12 @@ You might also be interested in...
 
 ------------------------------------------------------------------------
 
-### Generate SSH Keys
+#### Generate SSH Keys
 Add SSH Key to GitHub. Go to https://help.github.com/articles/generating-ssh-keys/  
 Submit your public key to the help desk to be added to Active Directory.   
 Make a HelpDesk ticket at: https://dandbhelpdesk.zendesk.com/
 
-### Fork Repos and Join DandB Org
+#### Fork Repos and Join DandB Org
 * Generate OAuth token from GitHub:  
   * https://help.github.com/articles/creating-an-access-token-for-command-line-use/  
 * Set Up Jenkins jobs: To be done by IMG
@@ -37,7 +37,7 @@ For information on how to setup and sync forked repos see :
  * https://help.github.com/articles/configuring-a-remote-for-a-fork  
  * https://help.github.com/articles/syncing-a-fork  
  
-### Configure OWL Local Application Configuration File  
+#### Configure OWL Local Application Configuration File  
 Update /etc/apache2/extra/dev_db.include with <username> and <password> and ensure entries match existing file.  
 [OWL Setup Guide - dev_db.include](https://dunandb.jira.com/wiki/display/OWL/OWL+Setup+Guide+-+dev_db.include)  
  
