@@ -311,7 +311,7 @@ Joining DandB, one of the fundamental expectations of you is to become a full st
 * Install  
   * ~~brew (http://brew.sh/)~~  
   * VirtualBox (4.2.18) - (OSX - http://download.virtualbox.org/virtualbox/4.2.18/VirtualBox-4.2.18-88780-OSX.dmg)  
-  * Also here: //Technology File Share/software/VirtualBox/OS X  
+    * Also here: //Technology File Share/software/VirtualBox/OS X  
   * VirtualBox Extensions (4.2.18)-http://download.virtualbox.org/virtualbox/4.2.18/Oracle_VM_VirtualBox_Extension_Pack-4.2.18-88780.vbox-extpack  
     * Also here: //Technology File Share/software/VirtualBox/OS X  
   * Vagrant (1.2.7) - (OSX - http://files.vagrantup.com/packages/7ec0ee1d00a916f80b109a298bab08e391945243/Vagrant-1.2.7.dmg)  
