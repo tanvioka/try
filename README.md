@@ -278,7 +278,7 @@ Salt, in a nutshell, relies on remote execution. Deployment of salt includes a "
 On top of this remote execution foundation, Salt allows the SysAdmin team to maintain configuration of various server types, e.g., load balancer, Java and PHP application servers. These configurations are version controlled. Like other programming languages, writing Salt configs requires specialized knowledge. The configurations allow for SysAdmin to configure a new server programmatically, reducing errors related to the manual configuration process.  
 
 > * The following command will send the command "state.highstate" to the server named "php".  
-  * This basically tells the "php" server to pull configurations from master, and configure itself.
+ * This basically tells the "php" server to pull configurations from master, and configure itself.
 root@saltmaster$ salt php state.highstate
 
 
