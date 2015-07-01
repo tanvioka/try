@@ -101,7 +101,9 @@ visiting fowl.local/status should yield
 
 * Running PHPUnit through PHPStorm requires PHPStorm 8
 * In PHPStorm preferences assign PHP54 as your interpreter and provide the path to vendor in your include path:
+# Image
 * and setup PHPUnit config files. NOTE: You must change PHPUnit library to use the custom loader specified below:
+# Image
 
 #### <a name="postman"></a>
 
