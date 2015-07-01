@@ -43,9 +43,7 @@ For information on how to setup and sync forked repos see :
 #### 3. Configure OWL Local Application Configuration File  
 Update /etc/apache2/extra/dev_db.include with \<username\> and \<password\> and ensure the entries match existing file.  
 [OWL Setup Guide - dev_db.include](https://github.com/tanvioka/try/blob/Step3/dev_db/dev_db_include.md)  
- 
- 
-https://github.com/tanvioka/try/blob/Step3/dev_db/dev_db_include.md
+
 
 #### <a name="fork_boxen"></a>
  
@@ -95,6 +93,8 @@ A good reference for packages we can add and install are listed below:
 visiting fowl.local/status should yield
 
 ![Image of Yaktocat](https://dunandb.jira.com/wiki/pages/viewpage.action?pageId=110723188&preview=/103940331/103940324/Screen%20Shot%202014-06-17%20at%2012.20.43%20PM.png)
+
+https://dunandb.jira.com/wiki/pages/viewpage.action?pageId=110723188&preview=/103940331/103940324/Screen%20Shot%202014-06-17%20at%2012.20.43%20PM.png
 
 # IMAGE 
 
