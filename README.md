@@ -87,9 +87,11 @@ A good reference for packages we can add and install are listed below:
 
 #### 6. Restart Apache and Test
 
-`#####sudo apachectl restart`
+> `sudo apachectl restart`
 
 visiting fowl.local/status should yield
+
+# IMAGE 
 
 #### <a name="setup_PHPStorm"></a>
 
