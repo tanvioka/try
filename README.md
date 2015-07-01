@@ -340,17 +340,18 @@ Fork your own copy of saltconfig
 
 ##### Pull The Code  
 
-Now clone the forked repo by either copying/pasting the git clone URL into terminal or use the command below and edit it so that you are using your own forked repo.
+Now clone the forked repo by either copying/pasting the git clone URL into terminal or   
+Use the command below and edit it so that you are using your own forked repo.
 
 > `dev@local$ git clone git@github.com:<your-repo>/salt-config.git`
 
 ##### Pre-Do-Work-Son!
 
-> You will ALWAYS need to be at the directory with Vagrantfile 
-dev@local$ cd /<path to>/salt-config/
+> You will ALWAYS need to be at the directory with Vagrantfile   
+> dev@local$ cd /<path to>/salt-config/
  
-> This will give you a list of commands to reference 
-dev@local$ vagrant help
+> This will give you a list of commands to reference   
+> dev@local$ vagrant help
 
 Once inside this directory, there are several commands that you can use to bring various parts of your local Bottle environment up or down.
 
