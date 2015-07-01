@@ -147,7 +147,8 @@ For Example:
 
 #### 10. Preparing to Use Bottle  
 For more information regarding Ship In A Bottle (SIAB) please see the following documentation:  
-[Ship in a Bottle - Deployment Guide](#ship_a_bottle)
+[Ship in a Bottle - Deployment Guide](https://github.com/tanvioka/try/blob/Step3/dev_db/ship_in_a_bottle.md)
+
 
 > cd ~/projects/salt-config   
 vagrant status      
