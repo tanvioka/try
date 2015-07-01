@@ -323,13 +323,13 @@ Joining DandB, one of the fundamental expectations of you is to become a full st
 #####Configuring Your Hosts Environment  
 Modify your /etc/hosts file and add the following entries.
 
-> `184.72.43.112   config
+ > 184.72.43.112   config  
 192.168.56.110  bottle.malibucoding.com  
 192.168.56.111  mycr-bottle.malibucoding.com  
 192.168.56.112  api-bottle.malibucoding.com  
 192.168.56.120  cms-bottle.malibucoding.com  
 192.168.56.185  tar-bottle.malibucoding.com  
-192.168.56.175  jehp-bottle.malibucoding.com`
+192.168.56.175  jehp-bottle.malibucoding.com
 
 ##### Fork it  
 
@@ -359,21 +359,110 @@ Once inside this directory, there are several commands that you can use to bring
 **Vagrant status**  
 This lists all of the available pre-configured machines within the Bottle environment. The column on the left are the names of virtual machines which you will reference with various vagrant commands. The column on the right indicates the virtual machine's current state.
 
-> `dev@local$ vagrant status  
-Current machine states:  
-saltmaster                not created (virtualbox)  
-front                     not created (virtualbox)  
-lb                        not created (virtualbox)  
-nfs                       not created (virtualbox)  
-php                       not created (virtualbox)  
-phoenix                   not created (virtualbox)  
-phoenixutils              not created (virtualbox)  
-queue                     not created (virtualbox)  
-mmonit                    not created (virtualbox)  
-solr                      not created (virtualbox)  
-logs                      not created (virtualbox)  
-openvpn                   not created (virtualbox)  
+> dev@local$ vagrant status  
+Current machine states:    
+saltmaster &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not created (virtualbox)  
+front &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not created (virtualbox)  
+lb   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not created (virtualbox)  
+nfs  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not created (virtualbox)  
+php  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not created (virtualbox)  
+phoenix    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not created (virtualbox)  
+phoenixutils&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not created (virtualbox)  
+queue &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not created (virtualbox)  
+mmonit  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  not created (virtualbox)  
+solr                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not created (virtualbox)  
+logs                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     not created (virtualbox)  
+openvpn               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    not created (virtualbox)  
 This environment represents multiple VMs. The VMs are all listed  
-above with their current state. For more information about a specific VM, run `vagrant status NAME`. `
+above with their current state. For more information about a specific VM, run `vagrant status NAME`. 
+
+**vagrant up**  
+> This will either create a new, or fire up an existing virtual machine. In this example, we're creating the front end server.
+dev@local$ vagrant up front  
+
+> TIP: You can reference serveral machines with the 'vagrant up' command. Note they are SPACE separated.
+dev@local$ vagrant up front lb nfs queue php phoenix phoenixutils  
+
+> TIP/WARNING: Running the following command alone will fire up ALL of your virtual machines. This is not advised unless you know what you're doing.
+dev@local$ vagrant up
+
+**vagrant ssh <virtual machine name>**  
+
+This SSH you into the virtual machine. Vagrant has configured a special network adapter that makes it possible for vagrant to talk to your virtual machine to allow this to happen. Note, if you ever SSH into the "external" IP address with the user vagrant, the password is also vagrant.  
+
+**vagrant suspend**  
+
+Rather than shutting your virtual machines down with "vagrant halt", you can suspend them, and put them in the "saved" state. This is basically standby. TIP: You should suspend them in reverse order.  
+
+**vagrant destroy**  
+
+This will shutdown and destroy your virtual machine. Completely.
+
+##### Salt-Minion Commands From Inside Minion Virtual Machines  
+These commands are ONLY called from salt-minions. You DON'T need to call this command from "saltmaster".  
 
 
+**salt-call -l debug state.highstate**
+>  * In this example, we have already "vagrant ssh nfs". From the terminal on "nfs", we have also "sudo -i".  
+ * Note: You will need to do this for all minions you SSH into: "sudo -i".  
+ * The following command basically tells the salt-minion on "nfs" to pull configurations down from "saltmaster".  
+ * You will see a LONG series of logging statements that "walk" you through the process as salt-minion is configuring this server.  
+ * You will also see errors (in red) that are not pertinent. This list is not inclusive, but ignore errors relating to: New Relic, Munin and monit.  
+ * The "-l debug" flag basically tells salt-minion to be more verbose.  
+ * "state.highstate" is a Salt specific command.  
+ root@nfs$ salt-call -l debug state.highstate
+ 
+ 
+##### Salt-Master Commands From Inside Saltmaster Virtual Machine 
+
+These commands are ONLY called from within "saltmaster".
+> From your local laptop  
+dev@local$ vagrant ssh saltmaster  
+vagrant@saltmaster$ sudo -i  
+root@saltmaster$
+
+#Image
+
+**salt-key**  
+
+The communication between master and minions need a secure way to communicate. Part of this process is establishing a key on master. The commands help you list and troubleshoot. A valid key allows you to also execute remote calls on minions.
+
+> This will list ALL of the keys  
+root@saltmaster$ salt-key
+# Image
+
+Sometimes you need to delete the keys when you aren't able to "communicate" with a particular minion from the server via Salt
+> This deletes a key. Sometimes you will need to do this if communication between master and minion doesn't seem to be working.
+root@saltmaster$ salt-key -d <virtual machine name>  
+
+>After deleting the key from the server, you will need to restart the minion on the client. Two ways to do this.
+root@nfs$ service salt-minion restart  
+
+>OR just restart the server altogether
+root@nfs$ shutdown -r now  
+
+>When the server comes backup, try the following command.  
+
+>In this example, you're basically send the command 'hostname' to the virtual machine 'nfs' from 'saltmaster'.  
+root@saltmaster$ salt -L nfs cmd.run 'hostname'
+# Image
+
+##### Do-Work-Son!  
+The following sections are in a specific order. You should follow them in this order.  
+* ...in knowing the order and understanding how everything works, you can omit front and lb. stick to nfs and php, and make sure your local hosts file is correctly pointing to the PHP app server, NOT the front, which shouldn't exist.  
+* up stuff in a given order  
+* highstate stuff  
+* turn off firewall
+ 
+##### Helpful tips
+
+* ORDER of state.highstate.  
+* salt key  
+* salt -L nfs,php cmd.run 'hostname'  
+* service iptables off  
+* vagrant up. sudo -i.
+  * turn off filewall
+  * test script
+  * tip on why suspend them in reverse order. there are dependencies of up...on NFS and queue.....  
+* Shortened Installation Guide  
+* See README file at https://github.com/dandb/salt-config/tree/release-next/work_servers
