@@ -122,6 +122,7 @@ Note: the access tokens are attached and will expire, you can easily update them
  * Launch SQuirreL SQL.  
  * In the Aliases pane, edit the 4 aliases and add your Active Directory credentials:  
  
+# Image
 
 For Example:
 
