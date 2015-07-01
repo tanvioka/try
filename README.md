@@ -91,7 +91,7 @@ A good reference for packages we can add and install are listed below:
 
 visiting fowl.local/status should yield
 
-![Image of Yaktocat](https://dunandb.jira.com/wiki/pages/viewpage.action?pageId=110723188&preview=/103940331/103940324/Screen%20Shot%202014-06-17%20at%2012.20.43%20PM.png#OWLLocalEnvironmentSetupGuide(BOXEN)-GenerateSSHKeys)
+![Image of Yaktocat](https://dunandb.jira.com/wiki/pages/viewpage.action?pageId=110723188&preview=/103940331/103940324/Screen%20Shot%202014-06-17%20at%2012.20.43%20PM.png)
 
 # IMAGE 
 
