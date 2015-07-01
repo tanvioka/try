@@ -3,15 +3,15 @@
 * [Generate SSH keys](#genarate_SSH) 
 * [Fork Repos and Join the DandB Org](#fork_repo)
 * [Configure OWL Local Application Configuration File](#config_OWL)
-* Fork and Run Boxen
-* Run Composer 
-* Restart Apache and Test
-* Setup PHPStorm
-* Using Postman
-* Database Access Setup (with SQuirreL SQL)
-* Preparing to Use Bottle
+* [Fork and Run Boxen](#fork_boxen)
+* [Run Composer](#run_composer) 
+* [Restart Apache and Test](#restart_apache)
+* [Setup PHPStorm](#setup_PHPStorm)
+* [Using Postman](#postman)
+* [Database Access Setup (with SQuirreL SQL)](#database_access_setup)
+* [Preparing to Use Bottle](#preparing_to_use_bottle)
 
-You might also be interested in...
+[You might also be interested in... ](#also_interested_in)
 
 ------------------------------------------------------------------------
 #### <a name="genarate_SSH"></a>
@@ -44,6 +44,8 @@ For information on how to setup and sync forked repos see :
 Update /etc/apache2/extra/dev_db.include with <username> and <password> and ensure entries match existing file.  
 [OWL Setup Guide - dev_db.include](#setup_OWL)  
  
+#### <a name="fork_boxen"></a>
+ 
 #### 4. Fork and Run Boxen  
 
 Forking this repo will be handled above when accepted into DandB GitHub  
@@ -63,6 +65,9 @@ boxen --srcdir ~  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 source /opt/boxen/env.sh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//This step will reload Boxen's environment  
 ./script/boxen --no-fde <team> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//This step will set up apache files and clone your repos
 
+
+#### <a name="run_composer"></a>
+
 #### 5. Run Composer
 
 ###### Directions for Running Composer
@@ -76,12 +81,15 @@ Composer is a PHP package manager. It allows your app to only contain the code t
 A good reference for packages we can add and install are listed below: 
  * https://packagist.org/
 
+#### <a name="restart_apache"></a>
 
 #### 6. Restart Apache and Test
 
 `#####sudo apachectl restart`
 
 visiting fowl.local/status should yield
+
+#### <a name="setup_PHPStorm"></a>
 
 #### 7. Setup PHPStorm
 
@@ -91,14 +99,18 @@ visiting fowl.local/status should yield
 * In PHPStorm preferences assign PHP54 as your interpreter and provide the path to vendor in your include path:
 * and setup PHPUnit config files. NOTE: You must change PHPUnit library to use the custom loader specified below:
 
+#### <a name="postman"></a>
 
-#### Using Postman
+
+#### 8. Using Postman
 * Postman is a Chrome extension that helps you be more efficient while working with APIs  
 * Postman has been bookmarked in Chrome and is also available at chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm/index.html  
 * Now you can have a small, manageable, set of collections that work in each environment!
 Note: the access tokens are attached and will expire, you can easily update them in Postman.
 
-#### 8. Database Access Setup (with SQuirreL SQL)  
+#### <a name="database_access_setup"></a>
+
+#### 9. Database Access Setup (with SQuirreL SQL)  
 
  * For most purposes, the database can be accessed in SQuirreL SQL without the need for a more complicated virtual machine setup.  
  * Launch SQuirreL SQL.  
@@ -117,7 +129,9 @@ For Example:
 | Password      | your AD credentials                                               |  
 
 
-##### Preparing to Use Bottle  
+#### <a name="preparing_to_use_bottle"></a>
+
+##### 10. Preparing to Use Bottle  
 For more information regarding Ship In A Bottle (SIAB) please see the following documentation:  
 [Ship in a Bottle - Deployment Guide](#ship_a_bottle)
 
@@ -125,9 +139,10 @@ For more information regarding Ship In A Bottle (SIAB) please see the following 
 vagrant status  
 vagrant up saltmaster`
  
+#### <a name="also_interested_in"></a>
 
 #### 9. You might also be interested in...  
-OWL Logging on Mac OSX  
+* [OWL Logging on Mac OSX](#OWL_logging_MAC)  
 PHPStorm / PHP Storm Keys  
 tunnelblick (for vpn)  
 Alias Shortcuts - Improve Efficiency  
@@ -467,3 +482,23 @@ The following sections are in a specific order. You should follow them in this o
   * tip on why suspend them in reverse order. there are dependencies of up...on NFS and queue.....  
 * Shortened Installation Guide  
 * See README file at https://github.com/dandb/salt-config/tree/release-next/work_servers
+
+----------------------------------------------------------------
+
+#### <a name="OWL_logging_MAC"></a>
+#### OWL Logging on Mac OSX
+
+##### Logging:  
+
+To watch logs locally on Mac OSX, you must add the following to your /etc/syslog.conf file:
+
+` user.*                                          /var/log/messages`
+
+Then run the following commands to restart the syslog service:
+
+> $ sudo launchctl unload /System/Library/LaunchDaemons/com.apple.syslogd.plist
+> $ sudo launchctl load /System/Library/LaunchDaemons/com.apple.syslogd.plist
+
+Now, when running the application, you can tail /var/log/messages as follows:
+
+> tail -f /var/log/message -f /var/log/apache2/error_log
