@@ -119,7 +119,7 @@ For Example:
 
 ##### Preparing to Use Bottle  
 For more information regarding Ship In A Bottle (SIAB) please see the following documentation:  
-Ship in a Bottle - Deployment Guide
+[Ship in a Bottle - Deployment Guide](#ship_a_bottle)
 
 `cd ~/projects/salt-config  
 vagrant status  
@@ -324,11 +324,11 @@ Joining DandB, one of the fundamental expectations of you is to become a full st
 Modify your /etc/hosts file and add the following entries.
 
 > `184.72.43.112   config
-192.168.56.110  bottle.malibucoding.com
-192.168.56.111  mycr-bottle.malibucoding.com
-192.168.56.112  api-bottle.malibucoding.com
-192.168.56.120  cms-bottle.malibucoding.com
-192.168.56.185  tar-bottle.malibucoding.com
+192.168.56.110  bottle.malibucoding.com  
+192.168.56.111  mycr-bottle.malibucoding.com  
+192.168.56.112  api-bottle.malibucoding.com  
+192.168.56.120  cms-bottle.malibucoding.com  
+192.168.56.185  tar-bottle.malibucoding.com  
 192.168.56.175  jehp-bottle.malibucoding.com`
 
 ##### Fork it  
@@ -346,10 +346,34 @@ Now clone the forked repo by either copying/pasting the git clone URL into termi
 
 ##### Pre-Do-Work-Son!
 
-> # You will ALWAYS need to be at the directory with Vagrantfile 
+> You will ALWAYS need to be at the directory with Vagrantfile 
 dev@local$ cd /<path to>/salt-config/
  
-> # This will give you a list of commands to reference 
+> This will give you a list of commands to reference 
 dev@local$ vagrant help
 
 Once inside this directory, there are several commands that you can use to bring various parts of your local Bottle environment up or down.
+
+##### Vagrant Commands  
+
+**Vagrant status**  
+This lists all of the available pre-configured machines within the Bottle environment. The column on the left are the names of virtual machines which you will reference with various vagrant commands. The column on the right indicates the virtual machine's current state.
+
+> `dev@local$ vagrant status  
+Current machine states:  
+saltmaster                not created (virtualbox)  
+front                     not created (virtualbox)  
+lb                        not created (virtualbox)  
+nfs                       not created (virtualbox)  
+php                       not created (virtualbox)  
+phoenix                   not created (virtualbox)  
+phoenixutils              not created (virtualbox)  
+queue                     not created (virtualbox)  
+mmonit                    not created (virtualbox)  
+solr                      not created (virtualbox)  
+logs                      not created (virtualbox)  
+openvpn                   not created (virtualbox)  
+This environment represents multiple VMs. The VMs are all listed  
+above with their current state. For more information about a specific VM, run `vagrant status NAME`. `
+
+
