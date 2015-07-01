@@ -253,3 +253,103 @@ SetEnvIf Host "^(dev|qa).shamrock" db_pass=DbCC@D@ndB!
 
 SetEnv owl_s3_secret      0TN/nTZTC76F0N8OVaDMHxYxKYeO6HYSI38woSnD  
 SetEnv owl_s3_key         AKIAI57YM2BNLHDBNAUA
+
+
+--------------------------------------------------------------------------------
+#### <a name="ship_a_bottle"></a>
+#### Ship in a Bottle - Deployment Guide
+
+
+#### Summary  
+This guide serves to assist in explaining what is Ship In A Bottle (SIAB), how to deploy it, how to deploy your applications to SIAB, and some common troubleshooting techniques that are inherently related to dealing with SysAdmin responsibilities.
+
+##### What is Ship In A Bottle?  
+
+* At a high level, SIAB combines several existing technologies to help programmatically deploy an environment onto your physical machine where you can then deploy your applications. 
+* In short, SIAB gets you, as close as reasonably possible, the environment that makes up Production. 
+* Today, this includes: front end (nginx), load balancer (HAproxy), nfs, queue (hornetQ), PHP Application server, Java Application server, and Java Utility server. 
+* You will still be connecting to the QA database on AWS.
+* More in-depth, SIAB leverages Salt-stack, VirtualBox, Vagrant, and various shell scripts to wire everything up.
+
+##### What is Salt-stack?  
+
+Salt, in a nutshell, relies on remote execution. Deployment of salt includes a "master", and one or more "minions". The minions and master establish a relationship that allows the master to execute commands remotely on the minion.  
+
+On top of this remote execution foundation, Salt allows the SysAdmin team to maintain configuration of various server types, e.g., load balancer, Java and PHP application servers. These configurations are version controlled. Like other programming languages, writing Salt configs requires specialized knowledge. The configurations allow for SysAdmin to configure a new server programmatically, reducing errors related to the manual configuration process.  
+
+> * The following command will send the command "state.highstate" to the server named "php".  
+  * This basically tells the "php" server to pull configurations from master, and configure itself.
+root@saltmaster$ salt php state.highstate
+
+
+##### What is VirtualBox? 
+
+Modern computer systems are so powerful that most of the time, it is underutilized. Try launching "Activity Monitor", click on the CPU tab, and take note the "Idle" value.
+
+# Image
+
+Virtualization was developed to better take advantage of these idle resources. VirtualBox is an application that allows you to create, or "provision", virtual computers within your physical computers. VirtualBox creates "containers" for your virtual computers to live. By running multiple virtual machines on your physical, or host, machine, you are better utilizing those idle resources.  
+In addition to a GUI application, VirtualBox also comes with a set of command-line utilities that allow for the ability to programmatically provision virtual machines. This is where Vagrant comes into play.
+
+##### What is Vagrant?  
+
+Essentially, Vagrant is a command-line Ruby application that parses a set of configurations, leverages those VirtualBox command-line utilities, to provision virtual machines for you! There's no need to go to the GUI to do this. The configurations have already been created for you.
+
+##### All Together Now!  
+
+The combination of Vagrant and Salt-stack configurations allow for the systematic and programmatic provisioning of a Production like environment on your physical machine. All together now, this is Bottle!
+
+##### Expectations & Assumptions  
+Joining DandB, one of the fundamental expectations of you is to become a full stack developer. What does this mean? It means that you are not only expected to understand the programming languages required to develop web applications, you will also eventually need to understand various database optimization techniques, as well as support the underlying infrastructure that your applications rely on. You'll have to learn some DBA/DBE knowledge. For Bottle, you'll have to learn some Linux SysAdmin knowledge too.
+
+##### Prerequisites  
+
+* Github account and access to dandb/salt-config  
+* Understand how to clone repositories  
+* TunnelBlick installed for VPN access  
+* Valid VPN account to connect to the database  
+* Install  
+  * ~~brew (http://brew.sh/)~~  
+  * VirtualBox (4.2.18) - (OSX - http://download.virtualbox.org/virtualbox/4.2.18/VirtualBox-4.2.18-88780-OSX.dmg)  
+  * Also here: //Technology File Share/software/VirtualBox/OS X  
+  * VirtualBox Extensions (4.2.18)-http://download.virtualbox.org/virtualbox/4.2.18/Oracle_VM_VirtualBox_Extension_Pack-4.2.18-88780.vbox-extpack  
+    * Also here: //Technology File Share/software/VirtualBox/OS X  
+  * Vagrant (1.2.7) - (OSX - http://files.vagrantup.com/packages/7ec0ee1d00a916f80b109a298bab08e391945243/Vagrant-1.2.7.dmg)  
+    * Also here: //Technology File Share/software/vagrant
+ 
+
+#### Deployment Steps  
+
+#####Configuring Your Hosts Environment  
+Modify your /etc/hosts file and add the following entries.
+
+> `184.72.43.112   config
+192.168.56.110  bottle.malibucoding.com
+192.168.56.111  mycr-bottle.malibucoding.com
+192.168.56.112  api-bottle.malibucoding.com
+192.168.56.120  cms-bottle.malibucoding.com
+192.168.56.185  tar-bottle.malibucoding.com
+192.168.56.175  jehp-bottle.malibucoding.com`
+
+##### Fork it  
+
+Fork your own copy of saltconfig  
+* Go here https://github.com/dandb/salt-config  
+* Click "Fork" on the top right of the page   
+* Fork it to yourself
+
+##### Pull The Code  
+
+Now clone the forked repo by either copying/pasting the git clone URL into terminal or use the command below and edit it so that you are using your own forked repo.
+
+> `dev@local$ git clone git@github.com:<your-repo>/salt-config.git`
+
+##### Pre-Do-Work-Son!
+
+> # You will ALWAYS need to be at the directory with Vagrantfile 
+dev@local$ cd /<path to>/salt-config/
+ 
+> # This will give you a list of commands to reference 
+dev@local$ vagrant help
+
+Once inside this directory, there are several commands that you can use to bring various parts of your local Bottle environment up or down.
