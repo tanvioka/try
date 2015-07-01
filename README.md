@@ -157,7 +157,7 @@ vagrant up saltmaster
 #### <a name="also_interested_in"></a>
 
 #### 9. You might also be interested in...  
-* [OWL Logging on Mac OSX](#OWL_logging_MAC)  
+* [OWL Logging on Mac OSX](https://github.com/tanvioka/try/edit/Step3/dev_db/OWL_Logging_on_MAC.md)  
 PHPStorm / PHP Storm Keys  
 tunnelblick (for vpn)  
 Alias Shortcuts - Improve Efficiency  
