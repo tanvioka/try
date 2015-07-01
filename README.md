@@ -434,17 +434,17 @@ root@saltmaster$ salt-key
 
 Sometimes you need to delete the keys when you aren't able to "communicate" with a particular minion from the server via Salt
 > This deletes a key. Sometimes you will need to do this if communication between master and minion doesn't seem to be working.
-root@saltmaster$ salt-key -d <virtual machine name>  
+> root@saltmaster$ salt-key -d <virtual machine name>  
 
 >After deleting the key from the server, you will need to restart the minion on the client. Two ways to do this.
-root@nfs$ service salt-minion restart  
+> root@nfs$ service salt-minion restart  
 
 >OR just restart the server altogether
-root@nfs$ shutdown -r now  
+> root@nfs$ shutdown -r now  
 
 >When the server comes backup, try the following command.  
-
 >In this example, you're basically send the command 'hostname' to the virtual machine 'nfs' from 'saltmaster'.  
+
 root@saltmaster$ salt -L nfs cmd.run 'hostname'
 # Image
 
