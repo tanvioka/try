@@ -379,15 +379,15 @@ above with their current state. For more information about a specific VM, run `v
 
 **vagrant up**  
 > This will either create a new, or fire up an existing virtual machine. In this example, we're creating the front end server.
-dev@local$ vagrant up front  
+> dev@local$ vagrant up front  
 
 > TIP: You can reference serveral machines with the 'vagrant up' command. Note they are SPACE separated.
-dev@local$ vagrant up front lb nfs queue php phoenix phoenixutils  
+> dev@local$ vagrant up front lb nfs queue php phoenix phoenixutils  
 
 > TIP/WARNING: Running the following command alone will fire up ALL of your virtual machines. This is not advised unless you know what you're doing.
-dev@local$ vagrant up
+> dev@local$ vagrant up
 
-**vagrant ssh <virtual machine name>**  
+**vagrant ssh \<virtual machine name\>**  
 
 This SSH you into the virtual machine. Vagrant has configured a special network adapter that makes it possible for vagrant to talk to your virtual machine to allow this to happen. Note, if you ever SSH into the "external" IP address with the user vagrant, the password is also vagrant.  
 
