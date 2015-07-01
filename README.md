@@ -92,11 +92,7 @@ A good reference for packages we can add and install are listed below:
 
 visiting fowl.local/status should yield
 
-![Image of Yaktocat](https://github.com/tanvioka/try/blob/Step3/dev_db/Restart_apache_and_test.png)
-
-https://dunandb.jira.com/wiki/pages/viewpage.action?pageId=110723188&preview=/103940331/103940324/Screen%20Shot%202014-06-17%20at%2012.20.43%20PM.png
-
-# IMAGE 
+![fowl.local/status](https://github.com/tanvioka/try/blob/Step3/dev_db/Restart_apache_and_test.png)
 
 #### <a name="setup_PHPStorm"></a>
 
@@ -106,9 +102,12 @@ https://dunandb.jira.com/wiki/pages/viewpage.action?pageId=110723188&preview=/10
 
 * Running PHPUnit through PHPStorm requires PHPStorm 8
 * In PHPStorm preferences assign PHP54 as your interpreter and provide the path to vendor in your include path:
-# Image
+![OWL_Setup_PHPStorm1](https://github.com/tanvioka/try/blob/Step3/dev_db/PHPStorm_setup1.png)
+
+
 * and setup PHPUnit config files. NOTE: You must change PHPUnit library to use the custom loader specified below:
-# Image
+![OWL_Setup_PHPStorm2](https://github.com/tanvioka/try/blob/Step3/dev_db/PHPStorm_setup2.png)
+
 
 #### <a name="postman"></a>
 
@@ -127,7 +126,8 @@ Note: the access tokens are attached and will expire, you can easily update them
  * Launch SQuirreL SQL.  
  * In the Aliases pane, edit the 4 aliases and add your Active Directory credentials:  
  
-# Image
+![data_access](https://github.com/tanvioka/try/blob/Step3/dev_db/Database_access_Setup.png)
+
 
 For Example:
 
