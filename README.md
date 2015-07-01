@@ -142,9 +142,9 @@ For Example:
 For more information regarding Ship In A Bottle (SIAB) please see the following documentation:  
 [Ship in a Bottle - Deployment Guide](#ship_a_bottle)
 
-> `cd ~/projects/salt-config   
+> cd ~/projects/salt-config   
 vagrant status      
-vagrant up saltmaster`
+vagrant up saltmaster
  
 #### <a name="also_interested_in"></a>
 
