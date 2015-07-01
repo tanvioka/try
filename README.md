@@ -279,7 +279,7 @@ SetEnv owl_s3_key         AKIAI57YM2BNLHDBNAUA
 
 --------------------------------------------------------------------------------
 #### <a name="ship_a_bottle"></a>
-#### Ship in a Bottle - Deployment Guide
+### Ship in a Bottle - Deployment Guide
 
 
 #### Summary  
@@ -487,8 +487,9 @@ The following sections are in a specific order. You should follow them in this o
   * turn off filewall
   * test script
   * tip on why suspend them in reverse order. there are dependencies of up...on NFS and queue.....  
-* Shortened Installation Guide  
-* See README file at https://github.com/dandb/salt-config/tree/release-next/work_servers
+
+##### Shortened Installation Guide  
+ * See README file at https://github.com/dandb/salt-config/tree/release-next/work_servers
 
 ----------------------------------------------------------------
 
