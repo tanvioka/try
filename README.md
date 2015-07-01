@@ -102,10 +102,12 @@ visiting fowl.local/status should yield
 
 * Running PHPUnit through PHPStorm requires PHPStorm 8
 * In PHPStorm preferences assign PHP54 as your interpreter and provide the path to vendor in your include path:
+
 ![OWL_Setup_PHPStorm1](https://github.com/tanvioka/try/blob/Step3/dev_db/PHPStorm_setup1.png)
 
 
 * and setup PHPUnit config files. NOTE: You must change PHPUnit library to use the custom loader specified below:
+
 ![OWL_Setup_PHPStorm2](https://github.com/tanvioka/try/blob/Step3/dev_db/PHPStorm_setup2.png)
 
 
