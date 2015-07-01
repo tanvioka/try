@@ -10,9 +10,6 @@
 * [Using Postman](#postman)
 * [Database Access Setup (with SQuirreL SQL)](#database_access_setup)
 * [Preparing to Use Bottle](#preparing_to_use_bottle)
-* 
-
-jglkgdlshjshjkdggj jjsj
 
 [You might also be interested in... ](#also_interested_in)
 
@@ -45,7 +42,7 @@ For information on how to setup and sync forked repos see :
 #### <a name="config_OWL"></a>  
 #### 3. Configure OWL Local Application Configuration File  
 Update /etc/apache2/extra/dev_db.include with \<username\> and \<password\> and ensure the entries match existing file.  
-[OWL Setup Guide - dev_db.include](#setup_OWL)  
+[OWL Setup Guide - dev_db.include](#https://github.com/tanvioka/try/blob/Step3/dev_db/dev_db_include.md)  
  
 #### <a name="fork_boxen"></a>
  
