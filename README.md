@@ -40,6 +40,7 @@ For information on how to setup and sync forked repos see :
  * https://help.github.com/articles/syncing-a-fork  
 
 #### <a name="config_OWL"></a>  
+
 #### 3. Configure OWL Local Application Configuration File  
 Update /etc/apache2/extra/dev_db.include with \<username\> and \<password\> and ensure the entries match existing file.  
 [OWL Setup Guide - dev_db.include](dev_db/dev_db_include.md)  
