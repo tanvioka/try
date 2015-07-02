@@ -92,7 +92,7 @@ A good reference for packages we can add and install are listed below:
 
 visiting fowl.local/status should yield
 
-![fowl.local/status](https://github.com/tanvioka/try/blob/Step3/dev_db/Restart_apache_and_test.png)
+![fowl.local/status](dev_db/Restart_apache_and_test.png)
 
 #### <a name="setup_PHPStorm"></a>
 
