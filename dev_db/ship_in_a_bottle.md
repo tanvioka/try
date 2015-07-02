@@ -27,7 +27,7 @@ root@saltmaster$ salt php state.highstate
 
 Modern computer systems are so powerful that most of the time, it is underutilized. Try launching "Activity Monitor", click on the CPU tab, and take note the "Idle" value.
 
-![Virtualbox](https://github.com/tanvioka/try/blob/Step3/dev_db/ship_bottle_virtualbox.png)
+![Virtualbox](dev_db/ship_bottle_virtualbox.png)
 
 Virtualization was developed to better take advantage of these idle resources. VirtualBox is an application that allows you to create, or "provision", virtual computers within your physical computers. VirtualBox creates "containers" for your virtual computers to live. By running multiple virtual machines on your physical, or host, machine, you are better utilizing those idle resources.  
 In addition to a GUI application, VirtualBox also comes with a set of command-line utilities that allow for the ability to programmatically provision virtual machines. This is where Vagrant comes into play.
@@ -163,7 +163,7 @@ dev@local$ vagrant ssh saltmaster
 vagrant@saltmaster$ sudo -i  
 root@saltmaster$
 
-![](https://github.com/tanvioka/try/blob/Step3/dev_db/salt_master_command1.png)
+![](dev_db/salt_master_command1.png)
 
 **salt-key**  
 
@@ -172,7 +172,7 @@ The communication between master and minions need a secure way to communicate. P
 > This will list ALL of the keys  
 root@saltmaster$ salt-key
 
-![](https://github.com/tanvioka/try/blob/Step3/dev_db/salt_master_command2.png)
+![](dev_db/salt_master_command2.png)
 
 Sometimes you need to delete the keys when you aren't able to "communicate" with a particular minion from the server via Salt
 > This deletes a key. Sometimes you will need to do this if communication between master and minion doesn't seem to be working.
@@ -189,7 +189,7 @@ Sometimes you need to delete the keys when you aren't able to "communicate" with
 
 root@saltmaster$ salt -L nfs cmd.run 'hostname'
 
-![](https://github.com/tanvioka/try/blob/Step3/dev_db/salt_master_command3.png)
+![](dev_db/salt_master_command3.png)
 
 ##### Do-Work-Son!  
 The following sections are in a specific order. You should follow them in this order.  
