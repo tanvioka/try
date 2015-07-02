@@ -60,11 +60,11 @@ sudo chown ${USER}:staff  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 git clone git@github.com:<github_username>/USSBoxen.git /opt/boxen/repo  
 cd /opt/boxen/repo  
 git remote add upstream git@github.com:taoistmath/USSBoxen.git  
-./script/boxen --no-fde  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//This step will ask for sudo pw, github login, and github pw  
+./script/boxen --no-fde  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//This step will ask for sudo pw, github login, and github pw  
 source /opt/boxen/env.sh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//This step will load Boxen's environment  
-boxen --srcdir ~  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//This step set your source directory to your home directory  
+boxen --srcdir ~  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//This step set your source directory to your home directory  
 source /opt/boxen/env.sh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//This step will reload Boxen's environment  
-./script/boxen --no-fde \<team\> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//This step will set up apache files and clone your repos
+./script/boxen --no-fde \<team\> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//This step will set up apache files and clone your repos
 
 
 #### <a name="run_composer"></a>
