@@ -160,9 +160,9 @@ vagrant up saltmaster
 * [OWL Logging on Mac OSX](https://github.com/tanvioka/try/edit/Step3/dev_db/OWL_Logging_on_MAC.md)  
 * [PHPStorm](http://www.jetbrains.com/phpstorm/)  / [PHP Storm Keys](https://github.com/tanvioka/try/blob/Step3/dev_db/PHP_Storm.md)  
 * [tunnelblick (for vpn)]  (https://code.google.com/p/tunnelblick/)
-Alias Shortcuts - Improve Efficiency  
-iTerm2  
-Zshell
+* [Alias Shortcuts - Improve Efficiency](https://github.com/tanvioka/try/blob/Step3/dev_db/alias_shortcuts.md)  
+* [iTerm2](http://iterm2.com/)
+* [Zshell](http://ohmyz.sh/)
 
 
 
