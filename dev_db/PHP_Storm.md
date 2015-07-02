@@ -21,82 +21,83 @@ Customer ID: 485608
 
 Product Name: PhpStorm
 
-Your PhpStorm license includes a 1-year upgrade subscription qualifying you for free upgrades to any new versions of PhpStorm released by JetBrains during your upgrade subscription period starting on your license issue date. To check availability of the new versions of PhpStorm, please visit http://www.jetbrains.com.
+* Your PhpStorm license includes a 1-year upgrade subscription qualifying you for free upgrades to any new versions of PhpStorm released by JetBrains during your upgrade subscription period starting on your license issue date. 
+* To check availability of the new versions of PhpStorm, please visit http://www.jetbrains.com.  
 
-For running any new version of PhpStorm released by JetBrains during your upgrade subscription period, please use the included below licensing details.
+###### For running any new version of PhpStorm released by JetBrains during your upgrade subscription period, please use the included below licensing details.  
 
 You can renew your upgrade subscription before or after its expiration. Your new subscription period will start on the date following the expiration date of your current upgrade subscription.
 
-User Name: Dun & Bradstreet Credibility
+*User Name*: Dun & Bradstreet Credibility
 
-===== LICENSE BEGIN ===== Shailen Mistry, 5/2/2014
-485608-28032014
-000018DQGJoVUdWJ!tw0"lvSglMm"S
-P3OL87Ib"0Qob05tOYWSo1DTKGBw8T
-PYwLxtQTVs34WxnY3!i02Vo3JklEJa
-===== LICENSE END =====
- 
-===== LICENSE BEGIN =====      Jeff Dilley, 5/1/2014
-485608-28032014
-00002oP9EVhavqYNtWLHLH9ktCzeIA
-kO"xiD0KEQTL2eY0ozSWYaC1ZTc1Vc
-ZbqXD6hQNdgcVWb41"GALOzPbXEzH6
-===== LICENSE END =====
- 
-===== LICENSE BEGIN =====  Cody Krainock, 4/30/2015
-485608-28032014
-00000BnDI4umN1Cfp2Xa0rqLGPzEE2
-uFiptGmnKGBQKz3eJo57lQuCiTziJP
-GNogRyFoI0b"hJnA6iLXkJQmStCzdv
-===== LICENSE END =====
- 
-===== LICENSE BEGIN =====   Charles Le, 5/5/2014
-485608-28032014
-00001JrGMry0kpoTeM!Fm"cWwIg3Ci
-IstaW6!5WNUAdbA4"aE2ht!kABlHUP
-aARO62f8bKWezVUoEo"C0PAIj6KRcF
-===== LICENSE END =====
- 
-===== LICENSE BEGIN =====   Tim Heiderich, 5/1/2014
-485608-28032014
-00000b60Ta9!0mIcTQN6bm7TPKoHhC
-!6yCWnNFdTW0Zijb5ftQ9JKIPf1Oy!
-qjg4hnmBdbuk2eB"Dfv1OfxhL1Y4uG
-===== LICENSE END =====
- 
-===== LICENSE BEGIN =====   Ashley D'Souza, 5/1/2014
-485608-28032014
-0000230bhnZPTFfiaa4Ll7MuRo7sUH
-6n4Qb"xjJvyGE"SZt3meGt"ykkUVqZ
-hmZZuwjY49aj5co8mAcBtg9P0Egr8i
-===== LICENSE END =====
- 
-===== LICENSE BEGIN =====   Lipika Kumar, 5/1/2014
-485608-28032014
-00000u"i6IhcqTiZJjVimOmx6FQ"xG
-j!AhG7P"N3FDyJpZqU8khhYAkDeBPB
-hZm!doqcDID7lGdhoVUXbRQ92qVwqJ
-===== LICENSE END =====
- 
-===== LICENSE BEGIN =====   Cameron Mayfield
-485608-28032014
-00001vGcSilQ6OBBhW36HR5izKkcIx
-rc9HNL79KVCR9tlvU3nLfDZ9rCIyU0
-kqtY"k3W2MwjjrYtoIN!q2D49CSf8U
-===== LICENSE END =====
- 
-===== LICENSE BEGIN =====   David Chiu, 5/1/2014
-485608-28032014
-00002nibNpGxS7sKw02yMAUUwCv0Zb
-RFgj0pzSozR56XklyuqD5OfI6bSXuQ
-WsKQBXciXTZadXudmn!4PfKydVxxKY
-===== LICENSE END =====
- 
-===== LICENSE BEGIN =====  Jon Crowe, 5/2/2014
-485608-28032014
-00001lHq"3tuEv0Lk7dPocug4wAVQ8
-x4D5yw9mJh40ATx47AhhnQoO7MeERh
-TgZkixDOao5yJfzkuOzk7tfHy8Zy"r
+===== LICENSE BEGIN ===== Shailen Mistry, 5/2/2014  
+485608-28032014  
+000018DQGJoVUdWJ!tw0"lvSglMm"S  
+P3OL87Ib"0Qob05tOYWSo1DTKGBw8T  
+PYwLxtQTVs34WxnY3!i02Vo3JklEJa  
+===== LICENSE END =====  
+
+===== LICENSE BEGIN =====      Jeff Dilley, 5/1/2014  
+485608-28032014  
+00002oP9EVhavqYNtWLHLH9ktCzeIA  
+kO"xiD0KEQTL2eY0ozSWYaC1ZTc1Vc    
+ZbqXD6hQNdgcVWb41"GALOzPbXEzH6  
+===== LICENSE END =====   
+
+===== LICENSE BEGIN =====  Cody Krainock, 4/30/2015  
+485608-28032014  
+00000BnDI4umN1Cfp2Xa0rqLGPzEE2  
+uFiptGmnKGBQKz3eJo57lQuCiTziJP  
+GNogRyFoI0b"hJnA6iLXkJQmStCzdv  
+===== LICENSE END =====   
+
+===== LICENSE BEGIN =====   Charles Le, 5/5/2014  
+485608-28032014  
+00001JrGMry0kpoTeM!Fm"cWwIg3Ci  
+IstaW6!5WNUAdbA4"aE2ht!kABlHUP  
+aARO62f8bKWezVUoEo"C0PAIj6KRcF  
+===== LICENSE END =====   
+
+===== LICENSE BEGIN =====   Tim Heiderich, 5/1/2014  
+485608-28032014  
+00000b60Ta9!0mIcTQN6bm7TPKoHhC  
+!6yCWnNFdTW0Zijb5ftQ9JKIPf1Oy!  
+qjg4hnmBdbuk2eB"Dfv1OfxhL1Y4uG  
+===== LICENSE END =====   
+
+===== LICENSE BEGIN =====   Ashley D'Souza, 5/1/2014  
+485608-28032014  
+0000230bhnZPTFfiaa4Ll7MuRo7sUH  
+6n4Qb"xjJvyGE"SZt3meGt"ykkUVqZ  
+hmZZuwjY49aj5co8mAcBtg9P0Egr8i  
+===== LICENSE END =====   
+
+===== LICENSE BEGIN =====   Lipika Kumar, 5/1/2014  
+485608-28032014  
+00000u"i6IhcqTiZJjVimOmx6FQ"xG  
+j!AhG7P"N3FDyJpZqU8khhYAkDeBPB  
+hZm!doqcDID7lGdhoVUXbRQ92qVwqJ  
+===== LICENSE END =====   
+
+===== LICENSE BEGIN =====   Cameron Mayfield  
+485608-28032014  
+00001vGcSilQ6OBBhW36HR5izKkcIx  
+rc9HNL79KVCR9tlvU3nLfDZ9rCIyU0  
+kqtY"k3W2MwjjrYtoIN!q2D49CSf8U  
+===== LICENSE END =====    
+
+===== LICENSE BEGIN =====   David Chiu, 5/1/2014  
+485608-28032014  
+00002nibNpGxS7sKw02yMAUUwCv0Zb  
+RFgj0pzSozR56XklyuqD5OfI6bSXuQ  
+WsKQBXciXTZadXudmn!4PfKydVxxKY  
+===== LICENSE END =====   
+
+===== LICENSE BEGIN =====  Jon Crowe, 5/2/2014  
+485608-28032014  
+00001lHq"3tuEv0Lk7dPocug4wAVQ8  
+x4D5yw9mJh40ATx47AhhnQoO7MeERh  
+TgZkixDOao5yJfzkuOzk7tfHy8Zy"r  
 ===== LICENSE END =====
  
 ===== LICENSE BEGIN =====  Angelina Burks, 5/2/2014
