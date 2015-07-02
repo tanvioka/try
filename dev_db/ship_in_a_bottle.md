@@ -27,7 +27,7 @@ root@saltmaster$ salt php state.highstate
 
 Modern computer systems are so powerful that most of the time, it is underutilized. Try launching "Activity Monitor", click on the CPU tab, and take note the "Idle" value.
 
-![Virtualbox](dev_db/ship_bottle_virtualbox.png)
+![Virtualbox](ship_bottle_virtualbox.png)
 
 Virtualization was developed to better take advantage of these idle resources. VirtualBox is an application that allows you to create, or "provision", virtual computers within your physical computers. VirtualBox creates "containers" for your virtual computers to live. By running multiple virtual machines on your physical, or host, machine, you are better utilizing those idle resources.  
 In addition to a GUI application, VirtualBox also comes with a set of command-line utilities that allow for the ability to programmatically provision virtual machines. This is where Vagrant comes into play.
