@@ -103,12 +103,12 @@ visiting fowl.local/status should yield
 * Running PHPUnit through PHPStorm requires PHPStorm 8
 * In PHPStorm preferences assign PHP54 as your interpreter and provide the path to vendor in your include path:
 
-![OWL_Setup_PHPStorm1](https://github.com/tanvioka/try/blob/Step3/dev_db/PHPStorm_setup1.png)
+![OWL_Setup_PHPStorm1](dev_db/PHPStorm_setup1.png)
 
 
 * and setup PHPUnit config files. NOTE: You must change PHPUnit library to use the custom loader specified below:
 
-![OWL_Setup_PHPStorm2](https://github.com/tanvioka/try/blob/Step3/dev_db/PHPStorm_setup2.png)
+![OWL_Setup_PHPStorm2](dev_db/PHPStorm_setup2.png)
 
 
 #### <a name="postman"></a>
@@ -128,7 +128,7 @@ Note: the access tokens are attached and will expire, you can easily update them
  * Launch SQuirreL SQL.  
  * In the Aliases pane, edit the 4 aliases and add your Active Directory credentials:  
  
-![data_access](https://github.com/tanvioka/try/blob/Step3/dev_db/Database_access_Setup.png)
+![data_access](dev_db/Database_access_Setup.png)
 
 
 For Example:
@@ -147,7 +147,7 @@ For Example:
 
 #### 10. Preparing to Use Bottle  
 For more information regarding Ship In A Bottle (SIAB) please see the following documentation:  
-[Ship in a Bottle - Deployment Guide](https://github.com/tanvioka/try/blob/Step3/dev_db/ship_in_a_bottle.md)
+[Ship in a Bottle - Deployment Guide](dev_db/ship_in_a_bottle.md)
 
 
 > cd ~/projects/salt-config   
@@ -157,10 +157,10 @@ vagrant up saltmaster
 #### <a name="also_interested_in"></a>
 
 #### 9. You might also be interested in...  
-* [OWL Logging on Mac OSX](https://github.com/tanvioka/try/edit/Step3/dev_db/OWL_Logging_on_MAC.md)  
-* [PHPStorm](http://www.jetbrains.com/phpstorm/)  / [PHP Storm Keys](https://github.com/tanvioka/try/blob/Step3/dev_db/PHP_Storm.md)  
+* [OWL Logging on Mac OSX](dev_db/OWL_Logging_on_MAC.md)  
+* [PHPStorm](http://www.jetbrains.com/phpstorm/)  / [PHP Storm Keys](dev_db/PHP_Storm.md)  
 * [tunnelblick (for vpn)]  (https://code.google.com/p/tunnelblick/)
-* [Alias Shortcuts - Improve Efficiency](https://github.com/tanvioka/try/blob/Step3/dev_db/alias_shortcuts.md)  
+* [Alias Shortcuts - Improve Efficiency](dev_db/alias_shortcuts.md)  
 * [iTerm2](http://iterm2.com/)
 * [Zshell](http://ohmyz.sh/)
 
