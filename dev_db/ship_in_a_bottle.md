@@ -163,7 +163,7 @@ dev@local$ vagrant ssh saltmaster
 vagrant@saltmaster$ sudo -i  
 root@saltmaster$
 
-![](dev_db/salt_master_command1.png)
+![](salt_master_command1.png)
 
 **salt-key**  
 
@@ -172,7 +172,7 @@ The communication between master and minions need a secure way to communicate. P
 > This will list ALL of the keys  
 root@saltmaster$ salt-key
 
-![](dev_db/salt_master_command2.png)
+![](salt_master_command2.png)
 
 Sometimes you need to delete the keys when you aren't able to "communicate" with a particular minion from the server via Salt
 > This deletes a key. Sometimes you will need to do this if communication between master and minion doesn't seem to be working.
@@ -189,7 +189,7 @@ Sometimes you need to delete the keys when you aren't able to "communicate" with
 
 root@saltmaster$ salt -L nfs cmd.run 'hostname'
 
-![](dev_db/salt_master_command3.png)
+![](salt_master_command3.png)
 
 ##### Do-Work-Son!  
 The following sections are in a specific order. You should follow them in this order.  
