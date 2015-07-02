@@ -28,7 +28,7 @@ Product Name: PhpStorm
 
 You can renew your upgrade subscription before or after its expiration. Your new subscription period will start on the date following the expiration date of your current upgrade subscription.
 
-*User Name*: Dun & Bradstreet Credibility
+**User Name**: Dun & Bradstreet Credibility
 
 ===== LICENSE BEGIN ===== Shailen Mistry, 5/2/2014  
 485608-28032014  
