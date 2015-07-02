@@ -64,13 +64,13 @@ Joining DandB, one of the fundamental expectations of you is to become a full st
 #####Configuring Your Hosts Environment  
 Modify your /etc/hosts file and add the following entries.
 
- > 184.72.43.112   config  
-192.168.56.110  bottle.malibucoding.com  
-192.168.56.111  mycr-bottle.malibucoding.com  
-192.168.56.112  api-bottle.malibucoding.com  
-192.168.56.120  cms-bottle.malibucoding.com  
-192.168.56.185  tar-bottle.malibucoding.com  
-192.168.56.175  jehp-bottle.malibucoding.com
+ > 184.72.43.112 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  config  
+192.168.56.110 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bottle.malibucoding.com  
+192.168.56.111 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mycr-bottle.malibucoding.com  
+192.168.56.112 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; api-bottle.malibucoding.com  
+192.168.56.120 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cms-bottle.malibucoding.com  
+192.168.56.185 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tar-bottle.malibucoding.com  
+192.168.56.175 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jehp-bottle.malibucoding.com
 
 ##### Fork it  
 
