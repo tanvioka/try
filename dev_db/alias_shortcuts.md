@@ -51,6 +51,7 @@ alias stubson="sudo sed -i .bak -e '/^ *ProxyPass[^/]*\/[^j]/s/^/#/g' -e 's/#\( 
 alias stubsoff="sudo sed -i .bak -e '/^ *Alias/s/^/#/g' -e 's/#\( *ProxyPass[^/]*\/[^j]\)/\1/' /etc/apache2/extra/httpd-vhosts.conf && sudo apachectl restart"  
 alias gm="git merge --no-ff"
 
+------------------------------------------------------------------------------------------------------
 
 #### Notes  
 
