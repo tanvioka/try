@@ -5,12 +5,13 @@ This page contains license information on PHP Storm.  Each developer should note
 Username for everyone is "Dun & Bradstreet Credibility"  
 Please add your name and date at the end of the line "===== LICENSE BEGIN ====="
 
-![PHP_Licence](https://github.com/tanvioka/try/blob/Step3/dev_db/phpstorm-license.png)
+![PHP_Licence](https://github.com/tanvioka/try/blob/Step3/dev_db/phpstorm-license.png)  
 
 See helpful keyboard shortcuts here:
-https://www.jetbrains.com/phpstorm/documentation/PhpStorm_ReferenceCard.pdf
+ * https://www.jetbrains.com/phpstorm/documentation/PhpStorm_ReferenceCard.pdf
  
- 
+----------------------------------------------------------------------------------
+
 ===========LICENSEE============
 
 Name: Dun & Bradstreet Credibility
